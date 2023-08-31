@@ -1,1 +1,37 @@
-/*  your css code here. If applicable */
+.hero{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/* Add this style to your existing CSS */
+img {
+  width: 70vh;
+  height: 100%; /* Set height to 100% to ensure object-fit works correctly */
+  object-fit: cover; /* Clip the image to fit the container while maintaining aspect ratio */
+}
+
+.hero > div {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styling for the "Explore Now" button or link */
+.hero button,
+.hero a {
+  padding: 10px 20px;
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* For the anchor tag */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add a bit of spacing between the button/link and the text */
+.hero button,
+.hero a + p {
+  margin-top: 10px;
+}
